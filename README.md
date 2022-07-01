@@ -1,4 +1,4 @@
-# boilerplate-vuejs
+# boilerplate-nuxtjs
 
 ## Build Setup
 
