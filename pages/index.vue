@@ -1,11 +1,8 @@
 <template>
-	<Tutorial />
+  <div>
+    <h1>Welcome to the homepage</h1>
+    <a-button type="primary">
+      Primary Button
+    </a-button>
+  </div>
 </template>
-
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({
-	name: 'IndexPage',
-})
-</script>
