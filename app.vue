@@ -10,7 +10,7 @@ const scrollY = computed(() => y.value);
 const screenHeight = computed(() => height.value);
 </script>
 
-<template class="font-sans antialiased">
+<template>
     <div>
         <header
             class="fixed top-0 z-20 h-[--navbar-height-mobile] flex justify-center items-center w-full md:h-[--navbar-height]"

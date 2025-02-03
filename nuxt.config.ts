@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt", "@nuxtjs/google-fonts", "@nuxt/image", "@vueuse/nuxt"],
+  modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt", "@nuxt/image", "@vueuse/nuxt", "@nuxt/fonts"],
   shadcn: {
     /**
      * Prefix for all the imported component
@@ -16,23 +16,23 @@ export default defineNuxtConfig({
   },
 
   // Setup Google Fonts
-  googleFonts: {
-    families: {
-      Montserrat: {
-        wght: "200..900",
-      },
+  fonts: {
+    defaults: {
+      weights: [200, 300, 400, 500, 600, 700, 800, 900],
+      styles: ["normal", "italic"],
     },
+    families: [{ name: "Montserrat", provider: "google" }],
   },
 
   app: {
     head: {
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
-      title: "Jagoan Surya Indonesia",
+      title: "Boilerplate NuxtJS 3",
       meta: [
-        { name: "description", content: "Jagoan Surya Indonesia" },
+        { name: "description", content: "Boilerplate NuxtJS 3" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { hid: "description", name: "description", content: "Jagoan Surya Indonesia" },
+        { hid: "description", name: "description", content: "Boilerplate NuxtJS 3" },
       ],
       link: [
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
